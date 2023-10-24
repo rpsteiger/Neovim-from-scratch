@@ -11,12 +11,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-  {
-   "dracula/vim",
-   config = function ()
-     -- load the colorscheme here
-     vim.cmd([[colorscheme dracula]])
-   end,
-  },
-})
+require("lazy").setup("user.plugins")
