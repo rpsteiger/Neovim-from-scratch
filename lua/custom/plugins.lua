@@ -49,6 +49,7 @@ local plugins = {
   },
   {
   "alexghergh/nvim-tmux-navigation",
+    lazy = false,
   keys = {
     { "<C-j>", "<cmd>NvimTmuxNavigateDown<CR>", desc = "Move to the tmux pane below" },
     { "<C-h>", "<cmd>NvimTmuxNavigateLeft<CR>", desc = "Move to the tmux pane to the left" },
